@@ -5,9 +5,9 @@
 
 # Sauvegarde des configs des Switchs
 
-Ce script **Python** permet de sauvegarder la configuration actuelle de chaque switch présent dans le fichier "Liste.txt".
+Ce script **Python** permet de sauvegarder la configuration actuelle de chaque switch présent dans le fichier "Liste.txt" (à créer et à completer).
 
-Les sauvegardes sont placées dans le dossier **SAVE**.
+Les sauvegardes sont placées dans un dossier **SAVE**.
 Le nom du fichier est l'IP du Switch en question.
 Le fichier n'a pas d'extension par sécurité, il est possible d'en mettre un comme ".txt", pour ca il suffit de rentrer dans le code du script et de modifier la variable : **formatconfig**. Il est cependant possible d'ouvrir le fichier de conf via un éditeur de texte.
 Pour ouvrir le fichier sans extension, il suffit de l'ouvrir avec Visual Studio Code. (Ou NotePad ++)
