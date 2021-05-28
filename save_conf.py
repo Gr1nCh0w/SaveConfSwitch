@@ -16,6 +16,9 @@ import netmiko
 # ======================================
 # Variable Global
 # ======================================
+ipHPE1910_1 = ""
+ipHPE1910_1 = ""
+ipMSM760 = ""
 fichierListe = "./Liste.txt"
 DossierSave = "./SAVE"
 nbLignes = 0
@@ -88,7 +91,7 @@ if nbLignesTotal != 0:
             
             elif typeSwitch == "hp_comware":
                 
-                if ipSwitch == "10.1.1.101" or ipSwitch == "10.1.1.202":
+                if ipSwitch == ipHPE1910_1 or ipSwitch == ipHPE1910_2:
                     
                     # Les switchs HPE 1910 non pas acces a toute les commandes lors d'un login.
                     # Du coup, un fichier "1910Config.txt" dans le dossier "ConfigFile" est utilise pour envoyer les commandes
@@ -105,7 +108,7 @@ if nbLignesTotal != 0:
 
                     config = net_connect.send_command_timing("display current-configuration")
 
-            elif ipSwitch == "10.1.1.254":
+            elif ipSwitch == ipMSM760:
 
                 # Le MSM760 demande aussi des commandes intermediaires pour pouvoir executer la commande de save.
                 # Son fichier de config est 'MSM760.txt'
