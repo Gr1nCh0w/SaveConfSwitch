@@ -1,5 +1,4 @@
-
-*Pour un meilleur affichage, Ouvrir avec Visual Studio Code et en haut à droite de la fenêtre, sélectionner l'icone avec une loupe.*
+*Créer un dossier "ConfigFile" et "SAVE" à la racine*
 
 ---
 
@@ -87,7 +86,3 @@ Sous Windows
 python save_conf.py
 ```
 ---
-
-Une Tâche Windows a été mise en place pour éxécuté le script tout les Lundis. 
-La Tâche est visible dans le "Planificateur de Tâches" de Windows.
-Tout les Lundis, il lance donc le "start.bat" qui s'occupe de lancer le script Python. 
